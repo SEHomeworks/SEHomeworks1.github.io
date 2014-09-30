@@ -1,0 +1,120 @@
+@font-face {
+    font-family: invasion2000;
+    src: url('font/invasion2000.ttf');
+}
+
+html, body {
+    background: #faf8ef;
+    color: #776e65;
+    font-size: 18px;
+    font-family: invasion2000;
+}
+.container {
+    margin:0 auto;
+    width: 450px;
+    display: block;
+    /*margin-left: 36%;*/
+}
+.title {
+    display: block;
+    float: left;
+    font-size: 46px;
+    transform:scaleX(0.9);
+    margin-bottom: 0;
+}
+.info {
+    float: left;
+    margin-bottom: 5px;
+    margin-left: 45px;
+    font-size: 13px;
+}
+.stats-container {
+    margin-left: 100px;
+    margin-top: 22px;
+    margin-right: -7px;
+    display: block;
+    float: right;
+}
+.survivor {
+    width: 50px;
+}
+.dead {
+    width: 60px;
+}
+.dead, .survivor{
+    position: relative;
+    display: inline-block;
+    background: #bbada0;
+    padding: 13px 13px;
+    font-size: 15px;
+    height: 12px;
+    line-height: 27px;
+    font-weight: bold;
+    border-radius: 3px;
+    color: white;
+    margin-top: -12px;
+    text-align: center;
+}
+.dead{
+    left: 3px;
+}
+.dead:after{
+    content: "Dead";
+}
+.survivor:after{
+    content: "Survivor";
+}
+.dead:after, .survivor:after{
+    position: absolute;
+    width: 100%;
+    top: 4px;
+    left: 0;
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 16px;
+    text-align: center;
+    color: #eee4da;
+    margin: 0, 1px;
+}
+p {
+    margin-top: 0;
+}
+.info>p {
+    display: inline;
+}
+.reset, .play-pause, .speed {
+    margin-top: 10px;
+    background: #8f7a66;
+    border-radius: 3px;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #f9f6f2;
+    height: 40px;
+    line-height: 42px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+#checkboard {
+    border-style: solid ;
+    border-color: #BBADA0;
+    border-width: 7px;
+    border-radius: 7px;
+}
+.reset, .play-pause {
+    margin-left: 35px;
+    float: right;
+}
+.play-pause {
+    float: right;
+}
+.speed {
+    float: left;
+    margin-left: 20px;
+}
+.speed>p {
+    float: left;
+}
+#reset {
+    float: right;
+}

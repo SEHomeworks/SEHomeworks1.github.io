@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Game of Life</title>
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container">
+    <!--显示条-->
+    <div id="header">
+        <div class="title"><b>Game Of Life</b></div>
+        <div class="stats-container">
+            <div class="survivor">::after</div>
+            <div class="dead">::after</div>
+        </div>
+        <div class="info">Your cells have SURVIVED for <p class="epochs"></p>Years!</div>
+    </div>
+
+    <!--棋盘-->
+    <div class="mainbody">
+        <canvas width=450 height=450 id="checkboard"></canvas>
+    </div>
+
+    <!--控制按钮-->
+    <div id="control-bar">
+        <div class="speed"><p>1</p><p>X</p></div>
+        <div class="reset"><p>Reset</p></div>
+        <div class="play-pause"><p>Pause</p></div>
+    </div>
+</div>
+</body>
+
+
+<script type="text/javascript" src="assets/vendor/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="assets/js/base.js"></script>
+<script type="text/javascript" src="assets/js/toolkit.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+</html>
